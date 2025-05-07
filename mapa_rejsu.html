@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_93a589c90ddfb920c12702569092705b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+</head>
+<body>
+    
+    
+     <h3 align="center" style="font-size:20px"><b>Trasa rejsu – Sardynia 2025</b></h3>
+     
+    
+            <div class="folium-map" id="map_93a589c90ddfb920c12702569092705b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_93a589c90ddfb920c12702569092705b = L.map(
+                "map_93a589c90ddfb920c12702569092705b",
+                {
+                    center: [41.25, 9.3],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_93a589c90ddfb920c12702569092705b);
+
+            
+
+        
+    
+            var tile_layer_70321c8da8763c85802d1a523777e681 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_70321c8da8763c85802d1a523777e681.addTo(map_93a589c90ddfb920c12702569092705b);
+        
+    
+            var feature_group_92cdd28a185e81d034880aab8f627da8 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_e3cbfe93bd9e92109202409e94cf2ede = L.marker(
+                [41.105305716755275, 9.442315837815858],
+                {
+}
+            ).addTo(feature_group_92cdd28a185e81d034880aab8f627da8);
+        
+    
+            var icon_c12d39515f7677f95555696a6ff7f272 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_57d41f055efbf5083c7468e27eab3ecd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ddf079f7744cf516f8798ec7caecbcf5 = $(`<div id="html_ddf079f7744cf516f8798ec7caecbcf5" style="width: 100.0%; height: 100.0%;">Cannigione</div>`)[0];
+                popup_57d41f055efbf5083c7468e27eab3ecd.setContent(html_ddf079f7744cf516f8798ec7caecbcf5);
+            
+        
+
+        marker_e3cbfe93bd9e92109202409e94cf2ede.bindPopup(popup_57d41f055efbf5083c7468e27eab3ecd)
+        ;
+
+        
+    
+    
+            marker_e3cbfe93bd9e92109202409e94cf2ede.bindTooltip(
+                `<div>
+                     Cannigione
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e3cbfe93bd9e92109202409e94cf2ede.setIcon(icon_c12d39515f7677f95555696a6ff7f272);
+            
+    
+            var marker_28aadb790d81bc0cf02076b4f637f5c9 = L.marker(
+                [41.21713275544549, 9.484644091600044],
+                {
+}
+            ).addTo(feature_group_92cdd28a185e81d034880aab8f627da8);
+        
+    
+            var icon_d8e19a4ff5ffe3c43105f95a93344b79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b99b79ff78d692b87f95cddefaeef0c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1082e8c0fcc5e19c5baa70d3136fffff = $(`<div id="html_1082e8c0fcc5e19c5baa70d3136fffff" style="width: 100.0%; height: 100.0%;">Cala Coticcio</div>`)[0];
+                popup_b99b79ff78d692b87f95cddefaeef0c2.setContent(html_1082e8c0fcc5e19c5baa70d3136fffff);
+            
+        
+
+        marker_28aadb790d81bc0cf02076b4f637f5c9.bindPopup(popup_b99b79ff78d692b87f95cddefaeef0c2)
+        ;
+
+        
+    
+    
+            marker_28aadb790d81bc0cf02076b4f637f5c9.bindTooltip(
+                `<div>
+                     Cala Coticcio
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_28aadb790d81bc0cf02076b4f637f5c9.setIcon(icon_d8e19a4ff5ffe3c43105f95a93344b79);
+            
+    
+            var marker_4c1ee02f35a49527ac28362c1c009615 = L.marker(
+                [41.27864007005866, 9.357879260510051],
+                {
+}
+            ).addTo(feature_group_92cdd28a185e81d034880aab8f627da8);
+        
+    
+            var icon_259c0672d60f3da2ec7f7b520d6b0046 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d323cd828834f24b58811d3e8bb457a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1abc11616bba56d5431b6c4c3c27ab9c = $(`<div id="html_1abc11616bba56d5431b6c4c3c27ab9c" style="width: 100.0%; height: 100.0%;">Spiaggia Rosa</div>`)[0];
+                popup_d323cd828834f24b58811d3e8bb457a8.setContent(html_1abc11616bba56d5431b6c4c3c27ab9c);
+            
+        
+
+        marker_4c1ee02f35a49527ac28362c1c009615.bindPopup(popup_d323cd828834f24b58811d3e8bb457a8)
+        ;
+
+        
+    
+    
+            marker_4c1ee02f35a49527ac28362c1c009615.bindTooltip(
+                `<div>
+                     Spiaggia Rosa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4c1ee02f35a49527ac28362c1c009615.setIcon(icon_259c0672d60f3da2ec7f7b520d6b0046);
+            
+    
+            var marker_c4d3db9a846dfe36198b7e3be10156cf = L.marker(
+                [41.338534642970174, 9.251782760054036],
+                {
+}
+            ).addTo(feature_group_92cdd28a185e81d034880aab8f627da8);
+        
+    
+            var icon_bf84ee70b962fe950d2a2787973b55f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e29af5635f2021ea4dbce36223d508b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_295d5fd01785a1f5b0e5493c98c124b1 = $(`<div id="html_295d5fd01785a1f5b0e5493c98c124b1" style="width: 100.0%; height: 100.0%;">Cala Lazarina</div>`)[0];
+                popup_e29af5635f2021ea4dbce36223d508b3.setContent(html_295d5fd01785a1f5b0e5493c98c124b1);
+            
+        
+
+        marker_c4d3db9a846dfe36198b7e3be10156cf.bindPopup(popup_e29af5635f2021ea4dbce36223d508b3)
+        ;
+
+        
+    
+    
+            marker_c4d3db9a846dfe36198b7e3be10156cf.bindTooltip(
+                `<div>
+                     Cala Lazarina
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c4d3db9a846dfe36198b7e3be10156cf.setIcon(icon_bf84ee70b962fe950d2a2787973b55f2);
+            
+    
+            var marker_e6b70c347672e26423e0304de3d70448 = L.marker(
+                [41.24426493684793, 9.19639325710594],
+                {
+}
+            ).addTo(feature_group_92cdd28a185e81d034880aab8f627da8);
+        
+    
+            var icon_b79adcaadb015cdfc20b2b314d310121 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb061a444b38014c353781fa037cf5cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e60c24e5f0f4094a6502d9334cb2253a = $(`<div id="html_e60c24e5f0f4094a6502d9334cb2253a" style="width: 100.0%; height: 100.0%;">Santa Teresa Gallura</div>`)[0];
+                popup_eb061a444b38014c353781fa037cf5cc.setContent(html_e60c24e5f0f4094a6502d9334cb2253a);
+            
+        
+
+        marker_e6b70c347672e26423e0304de3d70448.bindPopup(popup_eb061a444b38014c353781fa037cf5cc)
+        ;
+
+        
+    
+    
+            marker_e6b70c347672e26423e0304de3d70448.bindTooltip(
+                `<div>
+                     Santa Teresa Gallura
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e6b70c347672e26423e0304de3d70448.setIcon(icon_b79adcaadb015cdfc20b2b314d310121);
+            
+    
+            var marker_3cf873433889590fcdf9dcd01d4c14e0 = L.marker(
+                [41.38875945440455, 9.162026780313802],
+                {
+}
+            ).addTo(feature_group_92cdd28a185e81d034880aab8f627da8);
+        
+    
+            var icon_807a66ceb51ba5f940ffcd6697705d47 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12fb9e3624a63ec05fefdece5020a0c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c21f0def238fd6edaefb33f57166e144 = $(`<div id="html_c21f0def238fd6edaefb33f57166e144" style="width: 100.0%; height: 100.0%;">Bonifacio</div>`)[0];
+                popup_12fb9e3624a63ec05fefdece5020a0c1.setContent(html_c21f0def238fd6edaefb33f57166e144);
+            
+        
+
+        marker_3cf873433889590fcdf9dcd01d4c14e0.bindPopup(popup_12fb9e3624a63ec05fefdece5020a0c1)
+        ;
+
+        
+    
+    
+            marker_3cf873433889590fcdf9dcd01d4c14e0.bindTooltip(
+                `<div>
+                     Bonifacio
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3cf873433889590fcdf9dcd01d4c14e0.setIcon(icon_807a66ceb51ba5f940ffcd6697705d47);
+            
+    
+            var marker_e90593a0e17637d0de4c9fc2c5e9b86e = L.marker(
+                [41.23005978225263, 9.343595562507094],
+                {
+}
+            ).addTo(feature_group_92cdd28a185e81d034880aab8f627da8);
+        
+    
+            var icon_7a420ff50f82d69505827d6d06779e54 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_174eae2c4706a6d34fe348233ae57518 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1ea42ead9167039b8e09bc71ded715e = $(`<div id="html_f1ea42ead9167039b8e09bc71ded715e" style="width: 100.0%; height: 100.0%;">Cala Corsara</div>`)[0];
+                popup_174eae2c4706a6d34fe348233ae57518.setContent(html_f1ea42ead9167039b8e09bc71ded715e);
+            
+        
+
+        marker_e90593a0e17637d0de4c9fc2c5e9b86e.bindPopup(popup_174eae2c4706a6d34fe348233ae57518)
+        ;
+
+        
+    
+    
+            marker_e90593a0e17637d0de4c9fc2c5e9b86e.bindTooltip(
+                `<div>
+                     Cala Corsara
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e90593a0e17637d0de4c9fc2c5e9b86e.setIcon(icon_7a420ff50f82d69505827d6d06779e54);
+            
+    
+            var marker_7a654a194f3d52abb9aa6c0eaf69a651 = L.marker(
+                [41.21146722386139, 9.40425138215964],
+                {
+}
+            ).addTo(feature_group_92cdd28a185e81d034880aab8f627da8);
+        
+    
+            var icon_a8d6653663fbe1cbae79deb33badad4b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e4daf7a42dda1933d1684c12a129882f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c31ba1606f19bd743a51857c4f52e3d1 = $(`<div id="html_c31ba1606f19bd743a51857c4f52e3d1" style="width: 100.0%; height: 100.0%;">Porto Cala Gavetta</div>`)[0];
+                popup_e4daf7a42dda1933d1684c12a129882f.setContent(html_c31ba1606f19bd743a51857c4f52e3d1);
+            
+        
+
+        marker_7a654a194f3d52abb9aa6c0eaf69a651.bindPopup(popup_e4daf7a42dda1933d1684c12a129882f)
+        ;
+
+        
+    
+    
+            marker_7a654a194f3d52abb9aa6c0eaf69a651.bindTooltip(
+                `<div>
+                     Porto Cala Gavetta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7a654a194f3d52abb9aa6c0eaf69a651.setIcon(icon_a8d6653663fbe1cbae79deb33badad4b);
+            
+    
+            var marker_e71d06ac4463330888eeb29d6d37201b = L.marker(
+                [41.17779871398878, 9.423028775613176],
+                {
+}
+            ).addTo(feature_group_92cdd28a185e81d034880aab8f627da8);
+        
+    
+            var icon_e98bece0753efcbcd7894b059580125b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6515e588b62da4205111a2174f2b690a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3fb14a1c20a73b864a8d154264093f82 = $(`<div id="html_3fb14a1c20a73b864a8d154264093f82" style="width: 100.0%; height: 100.0%;">Capo d'Orso</div>`)[0];
+                popup_6515e588b62da4205111a2174f2b690a.setContent(html_3fb14a1c20a73b864a8d154264093f82);
+            
+        
+
+        marker_e71d06ac4463330888eeb29d6d37201b.bindPopup(popup_6515e588b62da4205111a2174f2b690a)
+        ;
+
+        
+    
+    
+            marker_e71d06ac4463330888eeb29d6d37201b.bindTooltip(
+                `<div>
+                     Capo d'Orso
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e71d06ac4463330888eeb29d6d37201b.setIcon(icon_e98bece0753efcbcd7894b059580125b);
+            
+    
+            var marker_4338c1bea1c7b3fbe5e8b5e2308e7659 = L.marker(
+                [41.105305716755275, 9.442315837815858],
+                {
+}
+            ).addTo(feature_group_92cdd28a185e81d034880aab8f627da8);
+        
+    
+            var icon_e27de0d77c9b1df8380fbc3c4ae67e65 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f88ed5fc2d7449f73699a6db1c50cc46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8cde839b2455a242bd9ef4e82007b687 = $(`<div id="html_8cde839b2455a242bd9ef4e82007b687" style="width: 100.0%; height: 100.0%;">Cannigione</div>`)[0];
+                popup_f88ed5fc2d7449f73699a6db1c50cc46.setContent(html_8cde839b2455a242bd9ef4e82007b687);
+            
+        
+
+        marker_4338c1bea1c7b3fbe5e8b5e2308e7659.bindPopup(popup_f88ed5fc2d7449f73699a6db1c50cc46)
+        ;
+
+        
+    
+    
+            marker_4338c1bea1c7b3fbe5e8b5e2308e7659.bindTooltip(
+                `<div>
+                     Cannigione
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4338c1bea1c7b3fbe5e8b5e2308e7659.setIcon(icon_e27de0d77c9b1df8380fbc3c4ae67e65);
+            
+    
+            feature_group_92cdd28a185e81d034880aab8f627da8.addTo(map_93a589c90ddfb920c12702569092705b);
+        
+    
+        function geo_json_85b2f4960e91c996c70edc3dc15c4ffc_styler(feature) {
+            switch(feature.properties.begin) {
+                default:
+                    return {"color": "darkblue", "weight": 3};
+            }
+        }
+
+        function geo_json_85b2f4960e91c996c70edc3dc15c4ffc_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_85b2f4960e91c996c70edc3dc15c4ffc = L.geoJson(null, {
+                onEachFeature: geo_json_85b2f4960e91c996c70edc3dc15c4ffc_onEachFeature,
+            
+                style: geo_json_85b2f4960e91c996c70edc3dc15c4ffc_styler,
+            ...{
+}
+        });
+
+        function geo_json_85b2f4960e91c996c70edc3dc15c4ffc_add (data) {
+            geo_json_85b2f4960e91c996c70edc3dc15c4ffc
+                .addData(data);
+        }
+            geo_json_85b2f4960e91c996c70edc3dc15c4ffc_add({"features": [{"geometry": {"coordinates": [[9.442315837815858, 41.105305716755275], [9.445613615344403, 41.106976556975155], [9.45803142922715, 41.14803975630005], [9.477075054144574, 41.17645405379589], [9.482727008887768, 41.18287106358632], [9.484644091600044, 41.21713275544549], [9.486487898919421, 41.21231430210106], [9.489972098506641, 41.2204891631724], [9.481725587054903, 41.23930685513569], [9.478861764920406, 41.240779544323686], [9.475563655341604, 41.24114192256302], [9.471704009258184, 41.24609820190448], [9.421411256849028, 41.2691737182098], [9.357879260510051, 41.27864007005866], [9.359182112991428, 41.279929863504236], [9.36007634109407, 41.28174607789589], [9.360077663247786, 41.289360854795646], [9.33483117512814, 41.29378239392817], [9.309876561565986, 41.299519701327775], [9.251385427891018, 41.33435744373623], [9.180201275554658, 41.36287056541485], [9.145258011056214, 41.38530589366745], [9.148231381910357, 41.38897997185404], [9.162026780313802, 41.38875945440455], [9.150074788030976, 41.389327500402935], [9.14662368457103, 41.38591512019333], [9.19639325710594, 41.24426493684793], [9.211833950600745, 41.25662592319154], [9.234601151641526, 41.262330099577795], [9.336042697484457, 41.22765589002347], [9.340104537625395, 41.22667027902456], [9.343132460844775, 41.229676668338364], [9.383968303028023, 41.20797309100371], [9.38618146653879, 41.20811246806396], [9.405914072758762, 41.20966790848608], [9.40425138215964, 41.21146722386139], [9.40586436365191, 41.210188941290355], [9.4182252408838, 41.208278159314474], [9.421833496690404, 41.20713385589385], [9.422929192028194, 41.20158105889527], [9.425736801589807, 41.18932821968103], [9.423723635525988, 41.178190963143805], [9.424219367638173, 41.17725616188418], [9.44634261453507, 41.13584750228942], [9.445156098815753, 41.10723487725822], [9.442315837815858, 41.105305716755275]], "type": "LineString"}, "properties": {"begin": "2", "end": "10"}, "type": "Feature"}], "name": "trasa", "type": "FeatureCollection"});
+
+        
+    
+            geo_json_85b2f4960e91c996c70edc3dc15c4ffc.addTo(map_93a589c90ddfb920c12702569092705b);
+        
+    
+            var layer_control_c4a201eb4acd92dde8836c7311f54e6d_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_70321c8da8763c85802d1a523777e681,
+                },
+                overlays :  {
+                    "Punkty" : feature_group_92cdd28a185e81d034880aab8f627da8,
+                    "Trasa rejsu" : geo_json_85b2f4960e91c996c70edc3dc15c4ffc,
+                },
+            };
+            let layer_control_c4a201eb4acd92dde8836c7311f54e6d = L.control.layers(
+                layer_control_c4a201eb4acd92dde8836c7311f54e6d_layers.base_layers,
+                layer_control_c4a201eb4acd92dde8836c7311f54e6d_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_93a589c90ddfb920c12702569092705b);
+
+        
+    
+            L.control.fullscreen(
+                {
+  "position": "topright",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_93a589c90ddfb920c12702569092705b);
+        
+</script>
+</html>
